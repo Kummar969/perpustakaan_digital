@@ -1,0 +1,31 @@
+.buku-card{
+    position: relative;
+    padding-bottom: 50px;
+}
+.btn-edit{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+.btn-hapus{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.stock {
+    position: absolute;
+    color: var(--text);
+}
+.clear-search{
+    cursor:pointer;
+    font-size:14px;
+    margin-left:8px;
+    opacity:0.6;
+    transition:0.2s;
+}
+.clear-search:hover{
+    opacity:1;
+}
+.clear-search.hidden{
+    display:none;
+}

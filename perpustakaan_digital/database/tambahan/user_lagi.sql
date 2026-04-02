@@ -1,0 +1,3 @@
+ALTER TABLE users
+ADD nisn VARCHAR(20),
+ADD kelas VARCHAR(20);

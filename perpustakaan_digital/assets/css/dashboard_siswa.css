@@ -1,0 +1,163 @@
+:root{
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+body{
+    margin:0;
+    font-family:Segoe UI;
+    display:flex;
+}
+.sidebar{
+    width:230px;
+    height:100vh;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    position:fixed;
+}
+.sidebar a{
+    display:block;
+    color:white;
+    padding:12px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:5px;
+    transition:0.3s;
+}
+.sidebar a:hover{
+    background:#1e293b;
+}
+.logo{
+    margin-bottom:20px;
+}
+.logout{
+    margin-top:30px;
+    background:#ef4444;
+    text-align:center;
+}
+.main{
+    margin-left:250px;
+    padding:30px;
+    width:100%;
+}
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+.welcome-message{
+    color: var(--text-white);
+    text-decoration:none;
+}
+.card-title{
+    color: var(--text-white);
+    text-decoration:none;
+}
+.clock{
+    color: var(--text-white);
+    text-align:right;
+    font-weight:bold;
+}
+.cards{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+.card{
+    flex:1;
+    background: var(--background);
+    padding:5px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.card h3{
+    margin:0;
+    font-size:16px;
+}
+.card p{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.section-title{
+    margin-bottom:15px;
+    color: var(--text-white);
+}
+.btn-pinjam{
+    margin-top:10px;
+    padding:8px 15px;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+.status{
+    margin-top:10px;
+    padding:6px;
+    border-radius:8px;
+    font-size:12px;
+    text-align:center;
+    font-weight:bold;
+}
+.status-pinjam{
+    background:#ffeaa7;
+    color:#b7791f;
+}
+.status-kembali{
+    background:#c8f7c5;
+    color:#2d6a4f;
+}
+.btn-back{
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 20px;
+    background:#3a86ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+.btn-back:hover{
+    background:#265df2;
+}
+.table-box{
+    margin-top:30px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+thead{
+    background:rgba(255, 255, 255, 0.049);
+    color:white;
+}
+th{
+    padding:15px;
+    text-align:left;
+}
+td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+}
+tr:hover{
+    background:#c1c1c116;
+}
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+.status.dipinjam{
+    background:#fff3cd;
+    color:#856404;
+}
+.status.kembali{
+    background:#d4edda;
+    color:#155724;
+}

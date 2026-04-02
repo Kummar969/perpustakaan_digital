@@ -1,0 +1,24 @@
+/* Default Theme (Light) */
+:root {
+    --bg: #f4f6f9;
+    --text: #111;
+    --card: #ffffff;
+    --menu: #3498db;
+}
+body.dark-mode {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --menu: #2c7be5;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+.card, .menu, .container {
+    background: var(--card);
+}
+.menu-btn {
+    background: var(--menu);
+}

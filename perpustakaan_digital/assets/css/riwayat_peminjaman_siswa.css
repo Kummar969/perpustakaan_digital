@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+.sidebar{
+    width:240px;
+    height:100vh;
+    background: rgba(15,23,42,0.95);
+    backdrop-filter: blur(10px);
+    position:fixed;
+    padding:20px;
+}
+.logo{
+    margin-bottom:25px;
+    font-size:18px;
+    font-weight:bold;
+}
+.sidebar a{
+    display:block;
+    padding:12px;
+    margin:8px 0;
+    text-decoration:none;
+    color:#cbd5f5;
+    border-radius:10px;
+    transition:0.3s;
+}
+.sidebar a:hover{
+    background:linear-gradient(90deg,#1d3762,#121342);
+    color:white;
+    transform:translateX(5px);
+}
+.logout{
+    margin-top:30px;
+    background: rgba(19, 32, 63, 0.95);
+    text-align:center;
+    color:white !important;
+}
+.main{
+    margin-left:260px;
+    padding:30px;
+}
+.topbar{
+    margin-bottom:25px;
+}
+.topbar h2{
+    font-size:22px;
+}
+.content{
+    margin-top:10px;
+}
+.book-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+.judul:hover{
+    color:#2563eb;
+}
+.book-card{
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+.book-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.book-info{
+    border-top:1px solid #eee;
+}
+.cover{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.book-info{
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:6px;
+    height:100%;
+}
+.book-info p{
+    margin:0;
+}
+.judul{
+    font-size:14px;
+    font-weight:600;
+    color:#ffffff;
+    cursor: pointer;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    min-height:38px; /* KUNCI biar sejajar */
+}
+.penulis{
+    font-size:12px;
+    color:#ffffff;
+    min-height:16px;
+}
+.tanggal{
+    font-size:12px;
+    color:#ffffff;
+    line-height:1.4;
+    min-height:16px;
+}
+.status{
+    margin-top:auto; /* dorong ke bawah */
+    align-self:center;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+.status-pinjam{
+    background: rgba(19, 32, 63, 0.95);
+    color:#ffffff;
+    cursor: pointer;
+}
+.status-kembali{
+    background: rgba(19, 32, 63, 0.95);
+    color:#ffffff;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .main{
+        margin-left:0;
+    }
+    .sidebar{
+        display:none;
+    }
+}

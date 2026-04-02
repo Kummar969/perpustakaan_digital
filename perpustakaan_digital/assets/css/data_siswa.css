@@ -1,0 +1,23 @@
+.table-container{
+    background: var(--card);
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+.table-modern{
+    width:100%;
+    border-collapse: collapse;
+}
+.table-modern th{
+    text-align:left;
+    padding:12px;
+    background:#3498db;
+    color:white;
+}
+.table-modern td{
+    padding:10px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+body.dark-mode .table-modern td{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}

@@ -1,0 +1,156 @@
+:root {
+    --bg: #f4f6f9;
+    --text: #111;
+    --shadow-hover: rgba(0,0,0,0.25);
+}
+body.dark-mode {
+    --bg: #121212;
+    --text: #ffffff;
+    --shadow-hover: rgba(255,255,255,0.25);
+}
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    margin-top: 60px;
+}
+.nama_admin {
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu {
+    margin-top: 30px;
+}
+.menu-btn {
+    display: block;
+    width: 220px;
+    margin: 10px auto;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.menu-btn:hover {
+    background-color: #2980b9;
+}
+.btn-logout {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 25, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+.btn-logout:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-hover);
+}
+.theme-toggle {
+    width: 110px;
+    height: 40px;
+    background: #e0e0e0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s;
+    z-index: 999;
+}
+.toggle-circle {
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    transition: 0.3s;
+}
+.toggle-text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+}
+body.dark-mode .theme-toggle {
+    background: #333;
+    color: white;
+}
+body.dark-mode .toggle-circle {
+    left: 5px;
+    right: auto;
+}
+body.dark-mode .toggle-text::after {
+    content: "Dark";
+}
+body:not(.dark-mode) .toggle-text::after {
+    content: "White";
+}
+.btn-buku {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+.btn-buku:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.btn-buku {
+    animation: naikHalus 0.6s ease;
+}
+@keyframes naikHalus {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body.dark-mode .btn-buku {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.btn-buku {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    animation: naikHalus 0.6s ease;
+}
+.form-modern input, .form-modern select, .form-modern textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.1);
+    color: var(--text);
+}
